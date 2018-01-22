@@ -1,0 +1,8 @@
+<div class="items d-flex  flex-column align-center">
+  <div class="flex-1 overflow-auto">
+      <app-item *ngFor='let item of items;' [item]='item'></app-item>
+  </div>
+  <div class="custom-container button-container d-flex justify-end">
+      <button class="confirm" routerLink='/cart'>Confirm Your Items</button>
+  </div>
+</div>

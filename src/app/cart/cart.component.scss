@@ -1,0 +1,61 @@
+.items{
+    position: relative;
+}
+
+.items > div{
+    padding: 10px 0px;
+}
+
+.button-container{
+    background: #fff;
+    div{
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: 2px dashed #f7f7f7;
+        span{
+            font-size: 30px;
+            color: #655858;
+        }
+    }
+    .confirm{
+        background: #389438;
+        color: #eee;
+        font-weight: bold
+    }
+}
+
+.message{
+    position: absolute;    
+    background: rgba(57, 75, 82, 0.6);
+    color: #fff;
+    font-size: 30px;
+    padding: 0 ;
+    transition: 500ms;
+    top: -100%;
+    button{
+        background: #fff;
+        box-shadow: 0px 2px 9px 1px #525252
+    }
+}
+
+button.back {
+    padding: 10px 20px;
+    margin: 0px;
+}
+.b-btn{
+    padding: 10px 60px;
+    margin: 20px 10px;
+}
+button{
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.message_open{
+    top: 0;
+    bottom: 0;
+}

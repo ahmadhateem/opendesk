@@ -1,0 +1,11 @@
+.nav{
+    background: #e8e8e8;
+    color: #b9b9b9;
+    &>div{
+        height: 50px;
+        font-size: 10px;
+    }
+    .selected{
+        color: #000;
+    }
+}

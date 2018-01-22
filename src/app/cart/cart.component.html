@@ -1,0 +1,21 @@
+<div class="items d-flex  flex-column align-center">
+  <div class="flex-1 overflow-auto">
+    <div class="custom-container">
+      <app-cart-item *ngFor='let item of items;' [item]='item'></app-cart-item>
+    </div>
+  </div>
+  <div class=" button-container d-flex justify-around align-center">
+    <div>
+      Total Products Selected: <span>{{items.length}}</span>
+    </div>
+    <div>
+      <button class="confirm b-btn" (click)='checkout()'>CHECKOUT</button>
+      <button class="back" routerLink='/home'>BACK</button>
+    </div>
+  </div>
+  <div class="message d-flex align-center justify-center flex-column" [ngClass]="{'message_open': message}">
+      <span>THANK YOU FOR SHOPING WITH US</span>
+      <button class="b-btn" routerLink='/home'>Go Back To Home Page</button> 
+  </div>
+</div>
+

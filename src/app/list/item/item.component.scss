@@ -1,0 +1,35 @@
+.item{
+    background: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    color: #6f6f6f;
+    .img-container{
+        width: 210px;
+        height: 120px;
+    }
+    .item-details{
+        margin: 10px 15px;
+        .item-name{
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+    .buttons-container {
+        width: 115px;
+        span{
+            font-weight: 600;   
+        }
+    }
+    .increment {
+        background: #fff;
+        border: 1px solid #9e9d9d;
+        padding: 7px 13px;
+        border-radius: 3px;
+        color:#9e9d9d;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+    }
+    
+}

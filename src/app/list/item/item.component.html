@@ -1,0 +1,31 @@
+<div class="item d-flex justify-between custom-container">
+  <div class="left-side d-flex">
+    <div class="img-container" [ngStyle]="{'background-image': 'url(' + item.imageUrl + ')'}">
+    </div>
+    <div class="item-details d-flex flex-column justify-between">
+      <span class="item-name">
+        {{item.name}}
+      </span>
+      <span>
+        Material: {{item.service1}}
+      </span>
+      <span>
+          Options: {{item.service2}}
+      </span>
+      <span>
+          Dimensions: {{item.service3}}
+      </span>
+    </div>
+  </div>
+
+  <div class="right-side d-flex justify-around flex-column">
+    <div class="buttons-container d-flex justify-between align-center">
+      <button class="increment" (click)='decrement()'>-</button>
+       <span>{{value}}</span>
+      <button class="increment" (click)='increment()'>+</button>
+    </div>
+    <button class="increment">
+      configure
+    </button>
+  </div>
+</div>
