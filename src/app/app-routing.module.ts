@@ -5,6 +5,7 @@ const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './list/list.module#ListModule' },
   { path: 'cart', loadChildren: './cart/cart.module#CartModule' },
+  {path: '**', redirectTo: 'home'}
 ];
 
 export const AppRouting = RouterModule.forRoot(appRoutes, {
