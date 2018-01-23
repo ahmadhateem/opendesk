@@ -4,7 +4,7 @@ import { AppRouting } from './app-routing.module';
 import { StoreModule } from '@ngrx/store';
 import {HttpClientModule} from '@angular/common/http';
 
-import { reducer } from './store/reducers';
+import { reducers } from './store/reducers';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,7 +24,7 @@ import { AppService } from './app.service';
     BrowserModule,
     HttpClientModule,
     AppRouting,
-    StoreModule.forRoot({ AppState : reducer })
+    StoreModule.forRoot(reducers)
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { State } from '../store/reducers';
+import { AppState } from '../store/reducers';
 
 @Component({
   selector: 'app-list',
@@ -9,7 +9,7 @@ import { State } from '../store/reducers';
 })
 export class ListComponent implements OnInit {
   public items: [{}];
-  constructor( private store: Store<State>) { }
+  constructor( private store: Store<AppState>) { }
 
   ngOnInit() {
     this.store.select('AppState','Items').subscribe(items => {

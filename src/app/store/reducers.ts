@@ -6,10 +6,18 @@ export interface State {
     Total: number;
 }
 
-const initialState: State =  {
+export const initialState: State =  {
     Items: [],
     Total: 0,
 };
+
+export interface AppState {
+    AppState: any
+}
+
+export const reducers: AppState = {
+    AppState: reducer
+}
 
 export function reducer(state = initialState, action: actions.Actions): State {
     console.log(action);

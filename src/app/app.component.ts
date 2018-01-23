@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { State } from './store/reducers';
+import { AppState } from './store/reducers';
 
 import { AppService } from './app.service';
 
@@ -15,7 +15,7 @@ export class AppComponent {
 
   constructor(
     private appService: AppService,
-    private store: Store<State>
+    private store: Store<AppState>
   ) {
     this.appService.getItems();
     this.store.select('AppState','Total').subscribe(total => {

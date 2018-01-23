@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Router } from '@angular/router';
 
-import { State } from '../store/reducers';
+import { AppState } from '../store/reducers';
 import * as actions from '../store/actions';
 
 @Component({
@@ -15,7 +15,7 @@ export class CartComponent implements OnInit {
   public message: boolean;
 
   constructor(
-    private store: Store<State>,
+    private store: Store<AppState>,
     private router: Router
   ) { }
 
